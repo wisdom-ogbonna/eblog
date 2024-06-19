@@ -11,15 +11,16 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <nav>
+      
       <a href="#" class="logo">LOGO</a>
       <div class="nav-items">
-        <a class="nav-link" href="#features">signin</a>
-        <a class="nav-link" href="#pricing">signup</a>
-        <a class="nav-link" href="#cta">Download</a>
+        <a class="nav-link" href="signin.php">signin</a>
+        <a class="nav-link" href="signup.php">signup</a>
+        <a class="nav-link" href="dashboard.php">Dashboard</a>
       </div>
 
       <div class="menu-icon">
@@ -244,6 +245,6 @@
       </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
