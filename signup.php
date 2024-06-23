@@ -9,7 +9,7 @@
 <body>
 
 <nav>
-    <a href="#" class="logo">LOGO</a>
+<a href="index.php" class="logo">LOGO</a>
   </nav>
   <div class="signup-container">
     <form class="signup-form">

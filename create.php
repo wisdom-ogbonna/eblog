@@ -1,5 +1,5 @@
 <?php
-include("admin/templates/header.php")
+include("admin/templates/header.php");
 ?>
 
 <div class="container mt-5">
@@ -23,7 +23,9 @@ include("admin/templates/header.php")
                             <label for="post">Post</label>
                             <textarea class="form-control" id="post" name="content" placeholder="Enter Post"></textarea>
                         </div>
-                        <input type="hidden" name="date" id="date">
+
+                        <input type="hidden" name="current_date" value="<?php echo date("d/m/y"); ?>" id="date">
+
 
                         <button type="submit" class="btn btn-primary btn-block" name="create">Submit</button>
                     </form>

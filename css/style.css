@@ -55,7 +55,7 @@ nav .nav-items {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1500px;
   margin-inline: auto;
 }
 
@@ -969,4 +969,122 @@ nav .menu-icon,
   margin: 5px 0 0;
   color: #888;
   font-size: 14px;
+}
+
+
+/* Blog-like Posts Table Styles */
+#posts {
+  padding: 50px 32px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+#posts h2 {
+  color: #8300b6;
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 32px;
+}
+
+.posts-content {
+  overflow-x: auto;
+}
+
+.posts-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.posts-table thead {
+  background: #f7f7f7;
+}
+
+.posts-table th, .posts-table td {
+  padding: 12px 20px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.posts-table th {
+  color: #8300b6;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.posts-table td {
+  color: #555;
+  font-size: 16px;
+}
+
+.posts-table tr:hover {
+  background: #f1f1f1;
+}
+
+.post-date {
+  color: #888;
+}
+
+.post-title {
+  font-weight: bold;
+  color: #000;
+}
+
+.post-summary {
+  color: #555;
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 600px) {
+  .posts-table {
+    display: block;
+    width: 100%;
+  }
+
+  .posts-table thead {
+    display: none;
+  }
+
+  .posts-table tr {
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .posts-table td {
+    display: block;
+    text-align: right;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+  }
+
+  .posts-table td:last-child {
+    border-bottom: 0;
+  }
+
+  .posts-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    text-align: left;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .posts-table td.post-date::before {
+    content: "Date:";
+  }
+
+  .posts-table td.post-title::before {
+    content: "Title:";
+  }
+
+  .posts-table td.post-summary::before {
+    content: "Summary:";
+  }
 }
